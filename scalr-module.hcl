@@ -11,5 +11,6 @@ variable "instance_type" {
   policy = "cloud.instance.types"
   conditions = {
   cloud = "azure"
+  cloud.location = var.region
  }
 }
